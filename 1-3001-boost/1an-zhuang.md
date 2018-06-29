@@ -1,6 +1,8 @@
 ### 1、下载boost库
 
-    官方下载地址：[http://www.boost.org/users/download](http://www.boost.org/users/download)
+```
+官方下载地址：[http://www.boost.org/users/download](http://www.boost.org/users/download)
+```
 
 ### 2、配置编译环境
 
@@ -14,7 +16,9 @@
 
 ### 4、编译
 
-    执行下面的编译命令bjam.exe –build-type=complete toolset=gcc stage variant=release link=shared threading=multi runtime-link=shared
+```
+执行下面的编译命令bjam.exe –build-type=complete toolset=gcc stage variant=release link=shared threading=multi runtime-link=shared
+```
 
 | 参数名 | 解释 |
 | :--- | :--- |

@@ -23,7 +23,7 @@
 
 ### 2.升级
 
-        一般第一次打开msys2用“pacman -Syu”全面升级，然后会提示关闭终端，再次打开后再一次运行”pacman -Syu”。若是不想升级可以直接用pacman安装自需要的软件，如vim，git，gcc\(即MinGw\)等。
+    一般第一次打开msys2用“pacman -Syu”全面升级，然后会提示关闭终端，再次打开后再一次运行”pacman -Syu”。 若是不想升级可以直接用pacman安装自需要的软件，如vim，git，gcc\(即MinGw\)等。
 
 ### 3.pacman
 
@@ -38,53 +38,7 @@
 | pacman -Rs &lt;packge-name&gt; | 在删除包的同时，也将删除其依赖。 |
 | pacman -Rd &lt;packge-name&gt; | 在删除包时不检查依赖。 |
 | pacman -Ss &lt;keywords&gt; | 这将搜索含关键字的包。 |
-| pacman -Qi &lt;packge-name&gt;  | 查看有关包的信息。 |
-
-        pacman -U &lt;gz-file&gt;         \# 安装本地包，其扩展名为 pkg.tar.gz
-
-        pacman -Syu                 \# 同步Msys2源，并更新 
-
-        pacman -Sy                  \# 仅同步源 
-
-        pacman -Su                  \# 更新系统
-
-        pacman -Sy &lt;packge-name&gt;    \# 同步源后再安装软件
-
-        pacman -R &lt;packge-name&gt;     \# 该命令将只删除包，不包含该包的依赖。
-
-        pacman -Rs &lt;packge-name&gt;    \# 在删除包的同时，也将删除其依赖。
-
-        pacman -Rd &lt;packge-name&gt;    \# 在删除包时不检查依赖。
-
-        pacman -Ss &lt;keywords&gt;       \# 这将搜索含关键字的包。
-
-        pacman -Qi &lt;packge-name&gt;    \# 查看有关包的信息。
-
-```
-Msys2使用pacman管理软件。pacman的基本使用如下：
-
-    pacman -S &lt;packge-name&gt;     \# 安装软件
-
-    pacman -U &lt;gz-file&gt;         \# 安装本地包，其扩展名为 pkg.tar.gz
-
-    pacman -Syu                 \# 同步Msys2源，并更新 
-
-    pacman -Sy                  \# 仅同步源 
-
-    pacman -Su                  \# 更新系统
-
-    pacman -Sy &lt;packge-name&gt;    \# 同步源后再安装软件
-
-    pacman -R &lt;packge-name&gt;     \# 该命令将只删除包，不包含该包的依赖。
-
-    pacman -Rs &lt;packge-name&gt;    \# 在删除包的同时，也将删除其依赖。
-
-    pacman -Rd &lt;packge-name&gt;    \# 在删除包时不检查依赖。
-
-    pacman -Ss &lt;keywords&gt;       \# 这将搜索含关键字的包。
-
-    pacman -Qi &lt;packge-name&gt;    \# 查看有关包的信息。
-```
+| pacman -Qi &lt;packge-name&gt; | 查看有关包的信息。 |
 
 ### 4.安装工具
 
