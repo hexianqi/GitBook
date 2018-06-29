@@ -131,7 +131,7 @@
 | git http-backend | 实现HTTP协议的CGI程序，支持智能HTTP协议 |
 | git instaweb | 即时启动浏览器通过 gitweb 浏览当前版本库 |
 | git shell | 受限制的shell，提供仅执行Git命令的SSH访问 |
-| git update-server-info 更新哑协议需要的辅助文件 |
+| git update-server-info | 更新哑协议需要的辅助文件 |
 | git http-fetch | 通过HTTP协议获取版本库 |
 | git http-push | 通过HTTP/DAV协议推送 |
 | git remote-ext | 由Git命令调用，通过外部命令提供扩展协议支持 |
@@ -184,7 +184,7 @@
 | gitdiff-index | 比较暂存区和版本库，相当于 gitdiff –cached –raw |
 | gitdiff-tree | 比较两个树对象，相当于 gitdiff –raw A B |
 | gitdifftool–helper | 由 gitdifftool 命令调用，默认要使用的差异比较工具 |
-| gitget-tar-commit-id 从 gitarchive 创建的 tar 包中提取提交ID |
+| gitget-tar-commit-id | 从 gitarchive 创建的 tar 包中提取提交ID |
 | gitgui–askpass | 命令 gitgui 的获取用户口令输入界面 |
 | gitnotes | 提交评论管理 |
 | gitpatch-id | 补丁过滤行号和空白字符后生成补丁唯一ID |
