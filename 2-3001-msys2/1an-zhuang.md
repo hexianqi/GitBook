@@ -23,9 +23,7 @@
 
 ### 2.升级
 
-一般第一次打开msys2用“pacman -Syu”全面升级，然后会提示关闭终端，再次打开后再一次运行”pacman -Syu”。若是不想升级可以直接用pacman安装自需要的软件，如vim，git，gcc\(即MinGw\)等。
-
-
+   一般第一次打开msys2用“pacman -Syu”全面升级，然后会提示关闭终端，再次打开后再一次运行”pacman -Syu”。若是不想升级可以直接用pacman安装自需要的软件，如vim，git，gcc\(即MinGw\)等。
 
 ```
 Msys2使用pacman管理软件。pacman的基本使用如下：
