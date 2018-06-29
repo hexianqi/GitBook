@@ -32,9 +32,9 @@
 | --show-libraries | 显示需要编译才能使用的Boost库列表。 |
 | toolset | 指定编译器，可选的如borland、gcc、msvc（VC6）、msvc-10.0（VS2010）等。 |
 | link=static\|shared | 生成动态链接库/静态链接库。生成动态链接库需使用shared方式，生成静态链接库需使用static方式。注意：static方式下，最终生成的很多静态链接库大小都在几兆、几十兆，甚至接近百兆。这么大的库我们一般是不会采用静态链接方式的，所以这些库不推荐以static方式编译（without掉）；如果已经编译了赶快删，肯定没用，否则将占用近1G的硬盘空间。以下是巨型库黑名单：wave、graph、math、regex、test、program\_options、serialization、signals。 |
-| runtime-link=static \| shared | 动态/静态链接C/C++运行时库。同样有shared和static两种方式，这样runtime-link和link一共可以产生4种组合方式。虽然它和link属性没有直接关系，但我们习惯上，一个工程如果用动态链接那么所有库都用动态链接，如果用静态链接那么所有库都用静态链接。所以这样其实只需要编译2种组合即可，即link=shared runtime-link=shared和link=static runtime-link=static。 |
-| threading=single \| multi | 单/多线程编译。一般都写多线程程序，当然要指定multi方式了；如果需要编写单线程程序，那么还需要编译单线程库，可以使用single方式。 |
-| variant=debug \| release | 编译debug/release版本。一般都是程序的debug版本对应库的debug版本，所以两个都编译。 |
+| runtime-link=static\|shared | 动态/静态链接C/C++运行时库。同样有shared和static两种方式，这样runtime-link和link一共可以产生4种组合方式。虽然它和link属性没有直接关系，但我们习惯上，一个工程如果用动态链接那么所有库都用动态链接，如果用静态链接那么所有库都用静态链接。所以这样其实只需要编译2种组合即可，即link=shared runtime-link=shared和link=static runtime-link=static。 |
+| threading=single\|multi | 单/多线程编译。一般都写多线程程序，当然要指定multi方式了；如果需要编写单线程程序，那么还需要编译单线程库，可以使用single方式。 |
+| variant=debug\|release | 编译debug/release版本。一般都是程序的debug版本对应库的debug版本，所以两个都编译。 |
 
 
 
