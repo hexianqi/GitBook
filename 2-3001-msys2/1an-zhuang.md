@@ -21,15 +21,11 @@
   * \# mingw64 优先使用 msys64/mingw64 下的工具；
   * \# msys2 两个都不使用，只用自身 msys 的工具；
 
-3.升级msys2
+### 2.升级
 
-```
-一般第一次打开msys2用“pacman -Syu”全面升级，然后会提示关闭终端，再次打开后再一次运行”pacman -Syu”。
+一般第一次打开msys2用“pacman -Syu”全面升级，然后会提示关闭终端，再次打开后再一次运行”pacman -Syu”。若是不想升级可以直接用pacman安装自需要的软件，如vim，git，gcc\(即MinGw\)等。
 
-若是不想升级可以直接用pacman安装自需要的软件，如vim，git，gcc\(即MinGw\)等。
-```
 
-4.pacman
 
 ```
 Msys2使用pacman管理软件。pacman的基本使用如下：
