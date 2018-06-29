@@ -1,7 +1,7 @@
 ### 1、下载boost库
 
 ```
-下载地址：http://www.boost.org/users/download/
+官方下载地址：http://www.boost.org/users/download
 ```
 
 ### 2、配置编译环境
@@ -26,7 +26,7 @@
 | --exec-prefix=&lt;EPREFIX&gt; | 安装体系结构所依赖的文件。 |
 | --libdir=&lt;DIR&gt; | 指定库文件安装目录。 |
 | --includedir=&lt;HDRDIR&gt; | 指定头文件安装目录。 |
-| --with-&lt;library&gt;/ --without-&lt;library&gt; | 选择编译/不编译哪些库。本人不需要编译python库，所以排除之，可以根据各人需要选择，默认是全部编译。注意：如果选择编译python的话，是需要python语言支持的，应该到python官方主页[http://www.python.org下载安装。](http://www.python.org下载安装。) |
+| --with-&lt;library&gt;/ --without-&lt;library&gt; | 选择编译/不编译哪些库。本人不需要编译python库，所以排除之，可以根据各人需要选择，默认是全部编译。注意：如果选择编译python的话，是需要python语言支持的，应该到python[官方主页](http://www.python.org)下载安装。 |
 | --help | 显示帮助信息。 |
 | --build-dir=DIR | 编译生成的中间文件的路径。默认就在根目录（D:\SDK\boost\_1\_50\_0）下，目录名为bin.v2，等编译完成后可将这个目录全部删除（没用了），所以不需要去设置。 |
 | --show-libraries | 显示需要编译才能使用的Boost库列表。 |
