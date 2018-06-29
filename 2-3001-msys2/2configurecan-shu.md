@@ -51,7 +51,7 @@
 | --cc=CC | use C compiler CC [gcc] | 指定使用何种C编译器 [gcc] |
 | --make=MAKE | use specified make [make] | 使用特定的make |
 | --extra-cflags=ECFLAGS | add ECFLAGS to CFLAGS [] | 添加ECFLAGS到CFLAGS |
-| --extra-ldflags=ELDFLAGS add ELDFLAGS to LDFLAGS [ -Wl,--as-needed] | 添加ELDFLAGS到LDFLAGS [-Wl，--as-needed] |
+| --extra-ldflags=ELDFLAGS | add ELDFLAGS to LDFLAGS [ -Wl,--as-needed] | 添加ELDFLAGS到LDFLAGS [-Wl，--as-needed] |
 | --extra-libs=ELIBS | add ELIBS [] | 添加ELIBS |
 | --build-suffix=SUFFIX | suffix for application specific build [] | 为专用程序添加后缀 |
 | --arch=ARCH | select architecture [x86] | 选择机器架构 [x86] |
