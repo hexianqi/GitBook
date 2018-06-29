@@ -1,4 +1,4 @@
-### onfigure参数
+### Configure参数
 
 * 标准选项参数：
 
