@@ -42,7 +42,7 @@
 
 ### 4.安装工具
 
-* Vim：pacman -S vim \# 安装完后在Msys2的~/下touch一个.vimrc，里面加入设置：set bs=2，不然vim在插入模式下的退格不能用。
+* Vim：pacman -S vim     \# 安装完后在Msys2的~/下touch一个.vimrc，里面加入设置：set bs=2，不然vim在插入模式下的退格不能用。
 * 32位MinGW-w64：pacman -S  mingw-w64-i686-toolchain
 
 * 64位MinGW-w64：pacman -S  mingw-w64-x86\_64-toolchain
