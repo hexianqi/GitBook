@@ -1,99 +1,101 @@
 ### 1.安装
 
-*    Msys2[官网](http://http://www.msys2.org/)下载；
-*    增加中国科学技术开源软件镜像地址：
-     分别在msys64/etc/pacman.d路径下的mirrorlist.msys、mirrorlist.mingw32、mirrorlist.mingw64文件的地址开头添加：
+* Msys2[官网](http://http://www.msys2.org/)下载；
+* 增加中国科学技术开源软件镜像地址：
+  分别在msys64/etc/pacman.d路径下的mirrorlist.msys、mirrorlist.mingw32、mirrorlist.mingw64文件的地址开头添加：
 
 `#mirrorlist.msys`
 
-`Server = http://mirrors.ustc.edu.cn/msys2/msys/$arch/ `
+`Server = http://mirrors.ustc.edu.cn/msys2/msys/$arch/`
 
 `#mirrorlist.mingw32`
 
-`Server = http://mirrors.ustc.edu.cn/msys2/mingw/i686/ `
+`Server = http://mirrors.ustc.edu.cn/msys2/mingw/i686/`
 
 `#mirrorlist.mingw64`
 
-`Server = http://mirrors.ustc.edu.cn/msys2/mingw/x86_64/ `
+`Server = http://mirrors.ustc.edu.cn/msys2/mingw/x86_64/`
 
-*    安装Msys2后，第一次运行下msys2\_shell.cmd，提示第一次设置初始化完毕后，就可以运行Msys2.exe、mingw64.exe或mingw32.exe，主要区别：
+* 安装Msys2后，第一次运行下msys2\_shell.cmd，提示第一次设置初始化完毕后，就可以运行Msys2.exe、mingw64.exe或mingw32.exe，主要区别：
   * \# mingw32 优先使用 msys64/mingw32 下的工具；
   * \# mingw64 优先使用 msys64/mingw64 下的工具；
   * \# msys2 两个都不使用，只用自身 msys 的工具；
 
 3.升级msys2
 
-    一般第一次打开msys2用“pacman -Syu”全面升级，然后会提示关闭终端，再次打开后再一次运行”pacman -Syu”。
+```
+一般第一次打开msys2用“pacman -Syu”全面升级，然后会提示关闭终端，再次打开后再一次运行”pacman -Syu”。
 
-    若是不想升级可以直接用pacman安装自需要的软件，如vim，git，gcc\(即MinGw\)等。
-
-
+若是不想升级可以直接用pacman安装自需要的软件，如vim，git，gcc\(即MinGw\)等。
+```
 
 4.pacman
 
-    Msys2使用pacman管理软件。pacman的基本使用如下：
+```
+Msys2使用pacman管理软件。pacman的基本使用如下：
 
-        pacman -S &lt;packge-name&gt;     \# 安装软件
+    pacman -S &lt;packge-name&gt;     \# 安装软件
 
-        pacman -U &lt;gz-file&gt;         \# 安装本地包，其扩展名为 pkg.tar.gz
+    pacman -U &lt;gz-file&gt;         \# 安装本地包，其扩展名为 pkg.tar.gz
 
-        pacman -Syu                 \# 同步Msys2源，并更新 
+    pacman -Syu                 \# 同步Msys2源，并更新 
 
-        pacman -Sy                  \# 仅同步源 
+    pacman -Sy                  \# 仅同步源 
 
-        pacman -Su                  \# 更新系统
+    pacman -Su                  \# 更新系统
 
-        pacman -Sy &lt;packge-name&gt;    \# 同步源后再安装软件
+    pacman -Sy &lt;packge-name&gt;    \# 同步源后再安装软件
 
-        pacman -R &lt;packge-name&gt;     \# 该命令将只删除包，不包含该包的依赖。
+    pacman -R &lt;packge-name&gt;     \# 该命令将只删除包，不包含该包的依赖。
 
-        pacman -Rs &lt;packge-name&gt;    \# 在删除包的同时，也将删除其依赖。
+    pacman -Rs &lt;packge-name&gt;    \# 在删除包的同时，也将删除其依赖。
 
-        pacman -Rd &lt;packge-name&gt;    \# 在删除包时不检查依赖。
+    pacman -Rd &lt;packge-name&gt;    \# 在删除包时不检查依赖。
 
-        pacman -Ss &lt;keywords&gt;       \# 这将搜索含关键字的包。
+    pacman -Ss &lt;keywords&gt;       \# 这将搜索含关键字的包。
 
-        pacman -Qi &lt;packge-name&gt;    \# 查看有关包的信息。
-
-
+    pacman -Qi &lt;packge-name&gt;    \# 查看有关包的信息。
+```
 
 5.安装配置Vim
 
-    使用命令：pacman -S vim
+```
+使用命令：pacman -S vim
 
-    即可以安装vim。安装完后在Msys2的~/下touch一个.vimrc，里面加入设置：set bs=2
+即可以安装vim。安装完后在Msys2的~/下touch一个.vimrc，里面加入设置：set bs=2
 
-    不然vim在插入模式下的退格不能用。
-
-
+不然vim在插入模式下的退格不能用。
+```
 
 6.安装 MinGW-w64
 
-    安装32位：pacman -S  mingw-w64-i686-toolchain
+```
+安装32位：pacman -S  mingw-w64-i686-toolchain
 
-    安装64位：pacman -S  mingw-w64-x86\_64-toolchain
-
-
+安装64位：pacman -S  mingw-w64-x86\_64-toolchain
+```
 
 7.安装Qt5
 
-    pacman -S  mingw-w64-x86\_64-qt5 mingw-w64-x86\_64-qt-creator
-
-
+```
+pacman -S  mingw-w64-x86\_64-qt5 mingw-w64-x86\_64-qt-creator
+```
 
 8.安装基本开发环境和常用工具
 
-    pacman -S  base-devel  git  mercurial  cvs  wget  p7zip  perl  ruby  python2
-
-
+```
+pacman -S  base-devel  git  mercurial  cvs  wget  p7zip  perl  ruby  python2
+```
 
 9.编译源码（qt使用最好用32位的，64位不一定能编译过）
 
-     ./configure \[--prefix=/test // 加编译目录\] \[--enable-shared // 启用动态库\] 
+```
+ ./configure \[--prefix=/test // 加编译目录\] \[--enable-shared // 启用动态库\] 
 
-     make 或 mingw32-make
+ make 或 mingw32-make
 
-     make install
+ make install
+```
 
 
 
