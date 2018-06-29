@@ -1,4 +1,4 @@
-### Configure参数
+### onfigure参数
 
 * 标准选项参数：  
   `--help                   print this message                                   显示此帮助信息`
@@ -75,7 +75,7 @@
 
 * 高级选项参数（供专业人员使用）：
 
- `--source-path=PATH       path to source code [/root/flv/ffmpeg]               源码的路径 [/root/flv/ffmpeg]`
+`--source-path=PATH       path to source code [/root/flv/ffmpeg]               源码的路径 [/root/flv/ffmpeg]`
 
 `--cross-prefix=PREFIX    use PREFIX for compilation tools                     为编译工具指定路径`
 
@@ -95,9 +95,9 @@
 
 `--arch=ARCH              select architecture [x86]                            选择机器架构 [x86]`
 
-`--cpu=CPU                selects the minimum cpu required (affects instruction selection, may crash on older CPUs)    选用最低的cpu（影响指令的选择，可以在老CPU上出错） | `
+`--cpu=CPU                selects the minimum cpu required                     选用最低的cpu`
 
-`--powerpc-perf-enable    enable performance report on PPC (requires enabling PMC)                                     启用PPC上面的性能报告（需要启用PMC）`
+`--powerpc-perf-enable    enable performance report on PPC (requires enabling PMC)启用PPC上面的性能报告（需要启用PMC）`
 
 `--disable-mmx            disable MMX usage                                    禁用MMX`
 
@@ -178,6 +178,4 @@
 `--disable-parser=NAME    disables parser NAME                                 禁用XX剖析器`
 
 `--disable-parsers        disables all parsers                                 禁用所有剖析器`
-
-
 
