@@ -9,13 +9,13 @@
 | --prefix=PREFIX | install in PREFIX [/usr/local] | 安装程序到指定目录 [/usr/local] |
 | --libdir=DIR | install libs in DIR [PREFIX/lib] | 安装库到指定目录 [prefix/lib] |
 | --shlibdir=DIR | install shared libs in DIR [PREFIX/lib] | 指定共享库路径 [prefix/lib] |
-| --incdir=DIR | install includes in DIR[PREFIX/include/ffmpeg] | 指定包含路径 [prefix/include/ffmpeg] |
+| --incdir=DIR | install includes in DIR [PREFIX/include/ffmpeg] | 指定包含路径 [prefix/include/ffmpeg] |
 | --mandir=DIR | install man page in DIR [PREFIX/man] | 指定手册路径 [prefix/man] |
-| --enable-mp3lame | enable MP3 encoding via libmp3lame[default=no] | 启用mp3编码libmp3lame [关闭] |
+| --enable-mp3lame | enable MP3 encoding via libmp3lame [default=no] | 启用mp3编码libmp3lame [关闭] |
 | --enable-libogg | enable Ogg support via libogg [default=no] | 启用ogg支持libogg [关闭] |
 | --enable-vorbis | enable Vorbis support via libvorbis [default=no] | 启用Vorbis支持libvorbis [关闭] |
 | --enable-faad | enable FAAD support via libfaad [default=no] | 启用faad支持libfaad [关闭] |
-| --enable-faadbin | build FAAD support with runtime linking[default=no] | 启用faad运行时链接支持 [关闭] |
+| --enable-faadbin | build FAAD support with runtime linking [default=no] | 启用faad运行时链接支持 [关闭] |
 | --enable-faac | enable FAAC support via libfaac [default=no] | 启用faac支持libfaac [关闭] |
 | --enable-libgsm | enable GSM support via libgsm [default=no] | 启用GSM支持libgsm [关闭] |
 | --enable-xvid | enable XviD support via xvidcore [default=no] | 启用xvid支持xvidcore [关闭] |
